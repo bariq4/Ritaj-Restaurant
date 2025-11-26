@@ -42,7 +42,7 @@ const HeroCarousel: React.FC = () => {
         <h2 className="text-ritaj-gold font-serif italic text-2xl md:text-4xl mb-2 animate-fadeInUp">
           Welcome to
         </h2>
-        <h1 className="text-white font-sans font-black text-5xl md:text-7xl lg:text-8xl tracking-wider mb-6 animate-fadeInUp delay-100 drop-shadow-lg">
+        <h1 className="text-white font-serif font-black text-5xl md:text-7xl lg:text-8xl tracking-wider mb-6 animate-fadeInUp delay-100 drop-shadow-lg">
           RITAJ <span className="text-ritaj-red">RESTAURANT</span>
         </h1>
         <p className="text-gray-200 text-lg md:text-xl max-w-2xl mb-8 animate-fadeInUp delay-200">

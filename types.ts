@@ -12,5 +12,6 @@ export interface MenuItem {
 
 export interface MenuCategory {
   category: string;
+  image?: string;
   items: MenuItem[];
 }

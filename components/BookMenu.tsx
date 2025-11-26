@@ -23,20 +23,11 @@ const BookMenu: React.FC<BookMenuProps> = ({ onClose }) => {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4 animate-fadeIn">
-      <div className="relative w-full max-w-5xl h-[80vh] flex flex-col items-center">
-        {/* Close Button */}
-        <button
-          onClick={onClose}
-          className="absolute -top-12 right-0 text-white hover:text-ritaj-gold transition-colors"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
+    <div className="flex items-center justify-center p-4">
+      <div className="relative w-full max-w-5xl h-[80vh] flex flex-col items-center gap-8">
 
         {/* Book Container */}
-        <div className="w-full h-full perspective-1500 flex items-center justify-center">
+        <div className="w-full flex-1 perspective-1500 flex items-center justify-center">
           <div className="relative w-full h-full md:h-[90%] md:w-[90%] bg-transparent flex shadow-2xl rounded-lg overflow-hidden">
             
             {/* Mobile View: Vertical Scroll or Slide */}
@@ -63,9 +54,9 @@ const BookMenu: React.FC<BookMenuProps> = ({ onClose }) => {
             </div>
 
             {/* Desktop View: Book Simulation */}
-            <div className="hidden md:flex w-full h-full relative shadow-[0_20px_50px_rgba(0,0,0,0.5)] bg-ritaj-dark rounded-r-lg rounded-l-lg border-8 border-ritaj-dark">
+            <div className="hidden md:flex w-full h-full relative shadow-[0_20px_50px_rgba(0,0,0,0.5)] rounded-r-lg rounded-l-lg">
                 {/* Book Cover Texture Background */}
-                <div className="absolute inset-0 bg-[#2c0b0e] z-0 rounded-lg"></div>
+                <div className="absolute inset-0 bg-transparent z-0 rounded-lg"></div>
 
                 {/* Left Page (Previous Page Content) */}
                 <div className="relative z-10 w-1/2 h-full bg-[#fdfbf7] rounded-l-lg shadow-inner border-r border-gray-300 p-8 overflow-y-auto custom-scrollbar origin-right transform transition-all duration-700">
@@ -109,7 +100,7 @@ const BookMenu: React.FC<BookMenuProps> = ({ onClose }) => {
         </div>
 
         {/* Navigation Controls */}
-        <div className="hidden md:flex absolute bottom-4 space-x-8">
+        <div className="hidden md:flex space-x-8">
             <button 
                 onClick={prevPage} 
                 disabled={currentPage === 0}
@@ -119,7 +110,7 @@ const BookMenu: React.FC<BookMenuProps> = ({ onClose }) => {
             >
                 Previous
             </button>
-            <span className="text-white flex items-center font-serif italic">
+            <span className="text-ritaj-dark flex items-center font-serif italic">
                 Page {currentPage + 1} of {totalPages}
             </span>
             <button 
@@ -145,28 +136,15 @@ const CategoryPage: React.FC<{ category?: MenuCategory }> = ({ category }) => {
     );
 
     return (
-        <div className="h-full">
-            <h3 className="text-2xl font-serif font-bold text-ritaj-red mb-6 uppercase tracking-wider text-center border-b border-ritaj-gold/30 pb-4">
-                {category.category}
-            </h3>
-            <div className="space-y-6">
-                {category.items.map((item, i) => (
-                    <div key={i} className="group">
-                        <div className="flex justify-between items-baseline mb-1">
-                            <h4 className="font-bold text-ritaj-dark text-lg group-hover:text-ritaj-red transition-colors">{item.name}</h4>
-                            <div className="flex-grow border-b border-dotted border-gray-400 mx-2"></div>
-                            <span className="font-bold text-ritaj-red text-lg whitespace-nowrap">{item.price}</span>
-                        </div>
-                        <p className="text-sm text-gray-500 italic font-serif leading-relaxed">{item.desc}</p>
-                    </div>
-                ))}
-            </div>
-            {/* Decorative Icon */}
-            <div className="mt-8 flex justify-center opacity-50">
-                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" strokeWidth="2">
-                    <path d="M12 2L15 8L21 9L17 14L18 20L12 17L6 20L7 14L3 9L9 8L12 2Z" />
-                 </svg>
-            </div>
+        <div className="h-full w-full flex items-center justify-center bg-white">
+            {/* Full Page Image - contained to show entire image without cuts */}
+            {category.image && (
+                <img 
+                    src={category.image} 
+                    alt={category.category} 
+                    className="max-w-full max-h-full object-contain"
+                />
+            )}
         </div>
     );
 };

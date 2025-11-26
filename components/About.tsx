@@ -2,16 +2,16 @@ import React from 'react';
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="py-20 bg-white relative overflow-hidden">
+    <section id="about" className="py-20 bg-ritaj-gold relative overflow-hidden">
       {/* Decorative Background Element */}
-      <div className="absolute top-0 right-0 w-64 h-64 bg-ritaj-gold/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+      <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2"></div>
       
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex flex-col md:flex-row items-center gap-12">
           
           {/* Text Content */}
           <div className="md:w-1/2 space-y-6 z-10">
-            <h4 className="text-ritaj-gold uppercase tracking-widest font-bold text-sm">Our Story</h4>
+            <h4 className="text-ritaj-red uppercase tracking-widest font-bold text-sm">Our Story</h4>
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-ritaj-dark leading-tight">
               A Legacy of <span className="text-ritaj-red">Authentic Flavors</span>
             </h2>
@@ -45,12 +45,12 @@ const About: React.FC = () => {
           <div className="md:w-1/2 relative">
             <div className="grid grid-cols-2 gap-4">
               <img 
-                src="https://picsum.photos/400/500?random=10" 
+                src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=400&h=500&fit=crop&q=80" 
                 alt="Restaurant Interior" 
                 className="w-full h-64 object-cover rounded-lg shadow-lg transform translate-y-8"
               />
               <img 
-                src="https://picsum.photos/400/500?random=11" 
+                src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=500&fit=crop&q=80" 
                 alt="Delicious Food" 
                 className="w-full h-64 object-cover rounded-lg shadow-lg"
               />

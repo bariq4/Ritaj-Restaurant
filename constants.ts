@@ -33,60 +33,55 @@ export const BRANCHES = [
 
 export const MENU_CATEGORIES = [
   {
-    category: "Hyderabadi Specials",
-    items: [
-      { name: "Hyderabadi Dum Biryani", price: "35 AED", desc: "Aromatic basmati rice cooked with tender mutton and authentic spices." },
-      { name: "Haleem (Seasonal)", price: "25 AED", desc: "Slow-cooked stew of wheat, barley, meat, lentils and spices." },
-      { name: "Chicken 65", price: "28 AED", desc: "Spicy, deep-fried chicken dish originating from Hotel Buhari, Chennai." },
-      { name: "Mirchi Ka Salan", price: "15 AED", desc: "Curried chili peppers, a traditional accompaniment for biryani." }
-    ]
+    category: "Menu Page 1",
+    image: "Public/Menu/img17.jpg",
+    items: []
   },
   {
-    category: "Arabian Delights",
-    items: [
-      { name: "Mandi Chicken", price: "32 AED", desc: "Traditional Yemeni dish consisting of meat and rice with a special blend of spices." },
-      { name: "Madfoon Mutton", price: "45 AED", desc: "Meat cooked in a hole in the ground, wrapped in foil and served with rice." },
-      { name: "Kunafa", price: "20 AED", desc: "Traditional Middle Eastern dessert made with thin noodle-like pastry." }
-    ]
+    category: "Menu Page 2",
+    image: "Public/Menu/img18.jpg",
+    items: []
   },
   {
-    category: "Indian Classics",
-    items: [
-      { name: "Butter Chicken", price: "30 AED", desc: "Chicken in a mildly spiced tomato sauce." },
-      { name: "Paneer Tikka Masala", price: "28 AED", desc: "Marinated paneer cheese served in a spiced gravy." },
-      { name: "Garlic Naan", price: "5 AED", desc: "Leavened, oven-baked flatbread flavored with garlic." }
-    ]
+    category: "Menu Page 3",
+    image: "Public/Menu/img20.jpg",
+    items: []
   },
   {
-    category: "Chinese Fusion",
-    items: [
-      { name: "Chicken Schezwan Noodles", price: "25 AED", desc: "Stir-fried noodles with spicy Schezwan sauce." },
-      { name: "Gobi Manchurian", price: "22 AED", desc: "Fried cauliflower tossed in a sweet and tangy sauce." },
-      { name: "Chili Chicken Dry", price: "26 AED", desc: "Crispy chicken chunks tossed in spicy chili sauce." }
-    ]
+    category: "Menu Page 4",
+    image: "Public/Menu/img22.jpg",
+    items: []
   },
   {
-    category: "Filipino Favorites",
-    items: [
-      { name: "Chicken Adobo", price: "28 AED", desc: "Chicken marinated in vinegar, soy sauce, garlic, and black peppercorns." },
-      { name: "Beef Sinigang", price: "32 AED", desc: "Sour soup composed of beef ribs and vegetables." },
-      { name: "Pancit Canton", price: "24 AED", desc: "Stir-fried noodles with vegetables and meat." }
-    ]
+    category: "Menu Page 5",
+    image: "Public/Menu/img24.jpg",
+    items: []
   },
   {
-    category: "Beverages & Desserts",
-    items: [
-      { name: "Mango Lassi", price: "15 AED", desc: "Yogurt-based drink with mango pulp." },
-      { name: "Avocado Shake", price: "18 AED", desc: "Creamy avocado blended with milk and honey." },
-      { name: "Gulab Jamun", price: "12 AED", desc: "Sweet confectionary or dessert, originating in the Indian subcontinent." },
-      { name: "Double Ka Meetha", price: "14 AED", desc: "Bread pudding dessert of fried bread slices soaked in hot milk with spices." }
-    ]
+    category: "Menu Page 6",
+    image: "Public/Menu/img26.jpg",
+    items: []
+  },
+  {
+    category: "Menu Page 7",
+    image: "Public/Menu/img28.jpg",
+    items: []
+  },
+  {
+    category: "Menu Page 8",
+    image: "Public/Menu/img30.jpg",
+    items: []
+  },
+  {
+    category: "Menu Page 9",
+    image: "Public/Menu/img32.jpg",
+    items: []
   }
 ];
 
 export const CAROUSEL_IMAGES = [
-  "https://picsum.photos/1920/1080?random=1",
-  "https://picsum.photos/1920/1080?random=2",
-  "https://picsum.photos/1920/1080?random=3",
-  "https://picsum.photos/1920/1080?random=4"
+  "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920&q=80", // Restaurant interior
+  "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1920&q=80", // Burger and fries
+  "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1920&q=80", // Food plating
+  "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=80"  // Restaurant dining
 ];

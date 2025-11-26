@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RITAJ Restaurant - Dubai</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Loading Gothic A1 as a high-quality alternative to Science Gothic for broader compatibility, while keeping the requested vibe -->
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;500;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ritaj: {
+                offwhite: '#F9F8F4',
+                red: '#8A1C1C',
+                gold: '#D4AF37',
+                dark: '#1A1A1A',
+                accent: '#B8860B'
+              }
+            },
+            fontFamily: {
+              sans: ['"Gothic A1"', 'sans-serif'],
+              serif: ['"Playfair Display"', 'serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #F9F8F4;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #D4AF37;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #8A1C1C;
+      }
+      
+      /* Book Flip 3D Styles */
+      .book-scene {
+        perspective: 1500px;
+      }
+      .book {
+        position: relative;
+        transform-style: preserve-3d;
+        transition: transform 1s;
+      }
+      .book-page {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        transform-origin: left center;
+        transition: transform 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+        background-color: #fff;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      }
+      .page-front {
+        z-index: 2;
+        transform: rotateY(0deg);
+      }
+      .page-back {
+        z-index: 1;
+        transform: rotateY(180deg);
+      }
+      .flipped .page-front {
+        transform: rotateY(-180deg);
+      }
+      .flipped .page-back {
+        transform: rotateY(0deg);
+        z-index: 3;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+</head>
+  <body class="bg-ritaj-offwhite text-ritaj-dark font-sans antialiased overflow-x-hidden">
+    <div id="root"></div>
+  </body>
+</html>

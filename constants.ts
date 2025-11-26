@@ -34,47 +34,47 @@ export const BRANCHES = [
 export const MENU_CATEGORIES = [
   {
     category: "Menu Page 1",
-    image: "Public/Menu/img17.jpg",
+    image: "/Menu/img17.jpg",
     items: []
   },
   {
     category: "Menu Page 2",
-    image: "Public/Menu/img18.jpg",
+    image: "/Menu/img18.jpg",
     items: []
   },
   {
     category: "Menu Page 3",
-    image: "Public/Menu/img20.jpg",
+    image: "/Menu/img20.jpg",
     items: []
   },
   {
     category: "Menu Page 4",
-    image: "Public/Menu/img22.jpg",
+    image: "/Menu/img22.jpg",
     items: []
   },
   {
     category: "Menu Page 5",
-    image: "Public/Menu/img24.jpg",
+    image: "/Menu/img24.jpg",
     items: []
   },
   {
     category: "Menu Page 6",
-    image: "Public/Menu/img26.jpg",
+    image: "/Menu/img26.jpg",
     items: []
   },
   {
     category: "Menu Page 7",
-    image: "Public/Menu/img28.jpg",
+    image: "/Menu/img28.jpg",
     items: []
   },
   {
     category: "Menu Page 8",
-    image: "Public/Menu/img30.jpg",
+    image: "/Menu/img30.jpg",
     items: []
   },
   {
     category: "Menu Page 9",
-    image: "Public/Menu/img32.jpg",
+    image: "/Menu/img32.jpg",
     items: []
   }
 ];

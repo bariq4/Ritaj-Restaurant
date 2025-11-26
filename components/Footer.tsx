@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
         
         {/* Logo and Text - Centered */}
         <div className="flex flex-col items-center gap-3 mb-6">
-          <img src="Public/Images/Ritaj-logo.png" alt="RITAJ Restaurant" className="h-16 object-contain" />
+          <img src="/Images/Ritaj-logo.png" alt="RITAJ Restaurant" className="h-16 object-contain" />
           <h2 className="font-serif font-black text-xl tracking-widest text-ritaj-red">RITAJ</h2>
           <p className="text-ritaj-dark/70 text-xs">&copy; {new Date().getFullYear()} Ritaj Restaurant. All Rights Reserved.</p>
         </div>

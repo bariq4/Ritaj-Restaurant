@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
 
         {/* Logo Image - Center */}
         <a href="#" className="absolute left-1/2 transform -translate-x-1/2 hidden md:block">
-          <img src="Public/Images/Ritaj-logo.png" alt="RITAJ Restaurant" className="h-16 object-contain" />
+          <img src="/Images/Ritaj-logo.png" alt="RITAJ Restaurant" className="h-16 object-contain" />
         </a>
 
         {/* Desktop Menu - Right */}

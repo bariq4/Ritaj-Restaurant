@@ -2,7 +2,7 @@ import React from 'react';
 
 const MenuSection: React.FC = () => {
   const handleViewMenu = () => {
-    window.open('/public/Images/Ritaj-Menu1.pdf', '_blank');
+    window.open('/Images/Ritaj-Menu1.pdf', '_blank');
   };
 
   return (

@@ -36,18 +36,14 @@ const BookMenu: React.FC<BookMenuProps> = ({ onClose }) => {
                     <h2 className="text-3xl font-serif text-ritaj-red text-center mb-8 border-b-2 border-ritaj-gold pb-4">Our Menu</h2>
                     {MENU_CATEGORIES.map((category, idx) => (
                         <div key={idx} className="mb-8">
-                            <h3 className="text-xl font-bold text-ritaj-dark mb-4 uppercase tracking-wider">{category.category}</h3>
-                            <div className="space-y-4">
-                                {category.items.map((item, i) => (
-                                    <div key={i} className="flex justify-between items-start border-b border-gray-200 pb-2">
-                                        <div>
-                                            <h4 className="font-semibold text-ritaj-dark">{item.name}</h4>
-                                            <p className="text-xs text-gray-500 italic">{item.desc}</p>
-                                        </div>
-                                        <span className="font-bold text-ritaj-red ml-2">{item.price}</span>
-                                    </div>
-                                ))}
-                            </div>
+                            {/* Display menu image on mobile */}
+                            {category.image && (
+                                <img 
+                                    src={category.image} 
+                                    alt={category.category} 
+                                    className="w-full h-auto object-contain rounded-lg shadow-md mb-4"
+                                />
+                            )}
                         </div>
                     ))}
                 </div>

@@ -45,12 +45,12 @@ const About: React.FC = () => {
           <div className="md:w-1/2 relative">
             <div className="grid grid-cols-2 gap-4">
               <img 
-                src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=400&h=500&fit=crop&q=80" 
+                src="/Images/outdoor.webp" 
                 alt="Restaurant Interior" 
                 className="w-full h-64 object-cover rounded-lg shadow-lg transform translate-y-8"
               />
               <img 
-                src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=500&fit=crop&q=80" 
+                src="/Images/Biryani.png" 
                 alt="Delicious Food" 
                 className="w-full h-64 object-cover rounded-lg shadow-lg"
               />

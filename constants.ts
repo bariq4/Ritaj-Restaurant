@@ -80,8 +80,8 @@ export const MENU_CATEGORIES = [
 ];
 
 export const CAROUSEL_IMAGES = [
-  "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920&q=80", // Restaurant interior
-  "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1920&q=80", // Burger and fries
-  "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1920&q=80", // Food plating
-  "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=80"  // Restaurant dining
+  "/Images/ambience.webp",
+  "/Images/Kebabs.webp",
+  "/Images/Exterior-night.jpg",
+  "/Images/logoo1.png"
 ];

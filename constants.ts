@@ -80,8 +80,8 @@ export const MENU_CATEGORIES = [
 ];
 
 export const CAROUSEL_IMAGES = [
-  "/Images/ambience.webp",
-  "/Images/Kebabs.webp",
-  "/Images/Exterior-night.jpg",
+  "/Images/ambience.jpg",
+  "/Images/Red-kebabs.png",
+  "/Images/Ritaj-Outdoor-night.png",
   "/Images/logoo1.png"
 ];
